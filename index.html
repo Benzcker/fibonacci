@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="body">
+		<h1>Fibonacci</h1>
+		<div id="intro">
+			Die Fibonacci-Folge ist eine unendliche Folge nat&uuml;rlicher Zahlen, die mit 1 + 1 beginnt. Die Summe zweier aufeinanderfolgender Zahlen ergibt die n&auml;chste Zahl: <br />
+			<b>
+			1 + 1 = 2<br />
+			1 + 2 = 3<br />
+			2 + 3 = 5<br />
+			3 + 5 = 8<br />
+			...
+			</b>
+			</div>
+			<br />
+
+			<div id="UI">
+				<div class="dropdown" style="width: 40%">
+					<button class="btn btn dropdown-toggle" type="button" data-toggle="dropdown" style="width: 100%">MODE
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" style="width: 100%">
+						<li><button style="width: 100%" class="btn btn">Zahlen berechnen</button></li>
+					</ul>
+				</div>
+				<figure>
+					<label for="calcCount">Anzahl der Berechnungen:</label>
+					<input id="calcCount" class="regler" type="range" min="10" max="10000" value="100"/>
+					<span id="calcCountValSpan"></span><br /><br /><br /><br />
+				</figure>
+				<figure>
+					<label for="stellenCount">Stellen:</label>
+					<input id="stellenCount" class="regler" type="range" min="1" max="15" value="1"/>
+					<span id="stellenCountValSpan"></span><br /><br /><br />
+				</figure>
+				<figure>
+					<label for="calcCount">Nummerierungen anzeigen</label>
+					<input type="checkbox" checked="true" id="nummerierungen" />
+				</figure>
+
+				<br />
+				<span class="tipp">Tipp f&uuml;r die Schieberegler: Du kannst sie auch mit den Pfeiltasten verschieben.</span>
+				
+				<br /><br />
+				<button id="start" onclick="start()">Start</button> <span id="loading" hidden="true">Berechnen...</span>
+			</div>
+			<br />
+			<div id="myOutput"></div>
+		
+		</div>
+</body>
+<script type="text/javascript" src="initialize.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>

@@ -1,0 +1,48 @@
+/* 
+http://paletton.com/#uid=53L0u0kllllaFw0g0qFqFg0w0aF 
+*/
+
+body {
+	text-align: center;
+	color: #13073A;
+
+	background-color: #407F7F;
+}
+
+#body{
+	padding: 2vh;
+}
+
+h1 {
+	color: #13073A;
+}
+
+.highlight {
+	color: #7C151D;
+	font-weight: bold;
+	background-color: #D46A6A;
+	/*border-left: 0.2vh solid #D46A6A;
+	border-right: 0.2vh solid #D46A6A;*/
+	border-radius: 4px;
+}
+
+#intro {
+	background-color: #2E4172;
+
+	border: 2vh solid #2E4172;
+	border-radius: 50px;
+
+	color: #7887AB;
+}
+
+.tipp {
+	color: #403075;
+
+	background-color: #887CAF;
+	border-top: 1.3vh solid #887CAF;
+	border-bottom: 1.3vh solid #887CAF;
+	border-left: 12vw solid #887CAF;
+	border-right: 12vw solid #887CAF;
+	border-radius: 5px;
+
+}
